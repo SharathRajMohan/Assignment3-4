@@ -1,0 +1,61 @@
+<!-- Name: Sharath Mohan StudentID: C0894212 -->
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js" -->
+<!--<![endif]-->
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Assignment 3&4</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+</head>
+<body>
+  <div class="heading">
+    <h1>US Dollar to Canadian Dollar</h1>
+    <h2>Convert USD to CAD at the real exchange Rate</h2>
+  </div>
+  <div id="main-container">
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+    <div id="app">
+      <div class="inputFields">
+          <label>Amount</label>
+          <br>
+          <input id="Inamount" type="number" placeholder="Enter amount" />
+          <select name="Currency" id="Inputcurrency">
+              <option value="USD" data-sync="CAD" selected>USD</option>
+              <option value="CAD" data-sync="USD">CAD</option>
+          </select>
+      </div>
+      <div>
+        <img src="./icon/icons8-left-right-arrow-66.png" width="80px" height="80px">
+      </div>
+      <div class="inputFields">
+          <label>Converted to</label>
+          <br>
+          <input id="Outamount" type="text" placeholder="Converted Price" readonly />
+          <select name="Currency" id="Outputcurrency">
+              <option value="USD" data-sync="CAD">USD</option>
+              <option value="CAD" data-sync="USD">CAD</option>
+          </select>
+      </div>
+    </div>
+    <div id="submit-button-container">
+      <button onclick="convert()">Convert</button>
+    </div>
+  </div>
+  <br>
+  
+  <script src="./js/script.js" async defer></script>
+</body>
+</html>
